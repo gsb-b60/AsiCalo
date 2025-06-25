@@ -21,6 +21,7 @@ let timerInterval;
 let endtime;
 //the remaining
 var remaining;
+
 //  minute update it can use to end the clock or expand the timer!!!!
 ins.addEventListener('click',()=>{
     min.innerHTML=String(parseInt(min.innerText)+1).padStart(2,'0');
@@ -74,3 +75,4 @@ start.addEventListener('click',StartTimer);
 pause.addEventListener('click',()=>{
     clearInterval(timerInterval);
 })
+
