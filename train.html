@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sẽ Cơ Bắp</title>
+    <link rel="stylesheet" href="train.css">
+    <link rel="stylesheet" href="train/display.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <h1 id="name" class="doc"><a href="index.html">SeCoBap</a></h1>
+                <li><a href="calories.html">Calories Calc</a></li>
+                <li><a aria-current="page" href="train.html">Trainning</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Training Session</h2>
+
+        <section class="timer-section">
+            <h3>Workout Timer</h3>
+            <!-- chao ban -->
+            <div id="countdown-clock">
+                <div id="clock">
+                    <span id="hour">00</span>:<span id="min">00</span>:<span id="sec">00</span>
+                </div>
+                <div id="timer-control">
+                    <button data-action="+3" class="butt">+3</button>
+                    <button data-action="ins" id="in" class="butt">+</button>
+                    <button data-action="des" id="de" class="butt">-</button>
+                    <button data-action="-3" class="butt">-3</button>
+                    <button data-action="start" id="start">Start</button>
+                    <button data-action="pause" id="pause">Pause</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="workout-log-section">
+            <h3>Workout Log</h3>
+            <div id="workout-log">
+                <!-- a sample div -->
+                <!-- <div id="ex-set" class="ex-log">
+                    <hr>
+                    <span id="exercise-name">Bench Press</span>
+                    <p>tag</p>
+                    <div class="set-list" id="ex-1">
+                        <div id="set-div" class="set-log">
+                            <span>Set</span>
+                            <span id="set-number">1</span>
+                            <lable for="weight">Weight</lable>
+                            <input type="number" min="0" id="weight" value="60" step="10">
+                            <label for="rep">Reps</label>
+                            <input type="number" min="0" name="" id="rep" value="6">
+                            <lable for="rir">Reps In Reserve</lable>
+                            <input id="rir" min="0" max="10" type="number" value="1">
+                            <button class="remove-set-btn" data-action="remove-set">X</button>
+                            <button data-action="save-set">V</button>        
+                        </div>
+                    </div>
+                    <button class="add-set-btn" data-action="add-set">add set</button>
+                    <button class="remove-exercise-btn" data-action="remove-ex">Remove Exercise</button>
+                </div> -->
+            </div>
+            <div class="action-buttons-container">
+                <button id="select-btn">Select Exercises</button>
+            </div>
+        </section>
+        <section id="exSelectEl" class="hidden">
+            <button id="exit">exit</button>
+            <h2>Exercise-List</h2>
+            <ul id="exercise-list">
+                <li>
+                    <!-- a sample li -->
+                    <!-- <div class="exercise-div">
+                        <hr>
+                        <h4>Barbell-bench-press</h4>
+                        <p>triceps bla bla</p>
+                        <hr>
+                    </div> -->
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+<script type="module"src="train.js"></script>
+<script type="module" src="train/exerciselog.js"></script>
+<script type="module" src="train/exSelection.js"></script>
+</html>
